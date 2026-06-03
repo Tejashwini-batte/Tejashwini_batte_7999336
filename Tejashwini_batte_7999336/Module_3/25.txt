@@ -1,0 +1,14 @@
+import java.util.HashMap;
+import java.util.*;
+class StudentData{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+HashMap<Integer,String> map = new HashMap<Integer,String>();
+map.put(1,"Teju");
+map.put(2,"Ravi");
+map.put(3,"Anu");
+System.out.print("Enter ID:");
+int id = sc.nextInt();
+System.out.println(map.get(id));
+}
+}

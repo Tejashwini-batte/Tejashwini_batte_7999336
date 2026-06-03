@@ -1,0 +1,10 @@
+class Typecasting{
+public static void main(String[] args){
+double d=21.34;
+int i=(int)d;
+int a=10;
+double b=a;
+System.out.println("int to double:"+i);
+System.out.println("double to int:"s+b);
+}
+}

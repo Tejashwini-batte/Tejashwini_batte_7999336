@@ -1,0 +1,6 @@
+class Operations{
+public static void main(Strings[] args){
+int r=10+5*2;
+System.out.println(r);
+}
+}

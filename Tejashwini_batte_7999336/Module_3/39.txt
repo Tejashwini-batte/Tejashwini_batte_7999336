@@ -1,0 +1,19 @@
+import java.lang.reflect.*;
+class Demo{
+public void show(){
+System.out.println("Hello");
+}
+}
+class Test{
+public static void main(String[] args){
+try{
+Class c = Class.forName("Demo");
+Method m=c.getDeclaredMethod("show");
+Object obj=c.getDeclaredConstructor().newInstance();
+m.invoke(obj);
+}
+catch(Exception e){
+System.out.println(e);
+}
+}
+}

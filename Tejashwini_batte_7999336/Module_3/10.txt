@@ -1,0 +1,22 @@
+import java.util.*;
+class GuessNumber{
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+int secretNumber=25;
+int guess;
+do
+{
+System.out.print("Enter your guess:");
+guess=sc.nextInt();
+if(guess > secretNumber)
+{
+System.out.println("Too High");
+}
+else if(guess < secretNumber)
+{
+System.out.println("Too Low");
+}
+}while(guess != secretNumber);
+System.out.println("Correct Guess!");
+}
+}

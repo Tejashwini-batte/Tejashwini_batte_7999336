@@ -1,0 +1,9 @@
+record Person(String name,int age){}
+class Test{
+public static void main(String[] args){
+Person p1 = new Person("Teju",21);
+Person p2 = new Person("Ravi",18);
+System.out.println(p1);
+System.out.println(p2);
+}
+}

@@ -1,0 +1,6 @@
+SELECT MONTH(registration_date) AS month,
+COUNT(registration_id) AS total_registrations
+FROM Registrations
+WHERE registration_date >= CURDATE() - INTERVAL 12 MONTH
+GROUP BY MONTH(registration_date)
+ORDER BY month;
